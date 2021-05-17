@@ -24,6 +24,14 @@
   color: white;
 }
 
+.Lock {
+  height: 10vmax;
+}
+
+.Heart {
+  color: #ff8181;
+}
+
 .App-link {
   color: #61dafb;
 }
