@@ -10,8 +10,10 @@ export const KView: React.FC = () => {
       <img src={icon} alt="logo" className="Lock" />
 
       <p>
-        Forver yours<span className="Heart">♡</span>
+        Forever yours
+        <span className="Kiss"> 😘</span>
       </p>
+      <p>Love, Markim</p>
     </div>
   );
 };
