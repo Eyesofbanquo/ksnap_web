@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import icon from "../resources/icon_ky.svg";
+import preorder from "../resources/preorder.svg";
 
 import Prismic from "@prismicio/client";
 import { Date, Link, RichText } from "prismic-reactjs";
@@ -37,13 +38,24 @@ export const KView: React.FC = () => {
         <div className="App-header">
           <img src={icon} alt="logo" className="Lock" />
 
-          <h3>{doc.data.header[0].text}</h3>
-          <p>{doc.data.body[0].text}</p>
+          <div>
+            <b>{doc.data.header[0].text}</b>
+          </div>
+          {doc.data.body[0].text}
+
+          <p>
+            <a href="">
+              <img src={preorder} alt="logo" />
+            </a>
+          </p>
         </div>
       )}
       {doc == null && (
         <div className="App-header">
           <img src={icon} alt="logo" className="Lock" />
+          <p>
+            <img src={preorder} alt="logo" />
+          </p>
         </div>
       )}
     </div>
