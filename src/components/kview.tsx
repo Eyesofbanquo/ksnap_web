@@ -44,7 +44,7 @@ export const KView: React.FC = () => {
           {doc.data.body[0].text}
 
           <p>
-            <a href="">
+            <a href="https://testflight.apple.com/join/tgks7Reh">
               <img src={preorder} alt="logo" />
             </a>
           </p>
